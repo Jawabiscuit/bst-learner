@@ -12,6 +12,7 @@ packages = [{include = "bst_learner", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.10.11"
 python-dotenv = "^1.0.0"
+graphviz = "^0.20.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
