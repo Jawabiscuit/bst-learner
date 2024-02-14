@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "bst-learner"
+version = "0.1.0"
+description = ""
+authors = ["Jonas <Jawabiscuit@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Jawabiscuit/bst-learner"
+repository = "https://github.com/Jawabiscuit/bst-learner"
+packages = [{include = "bst_learner", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.11"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-sugar = "^0.9.5"
+pytest-clarity = "^1.0.1"
+pytest-random-order = "^1.0.4"
+pytest-cov = "^3.0.0"
+pytest-timeout = "^2.2.0"
+coverage = {extras = ["toml"], version = "^6.4.4"}
+safety = "^2.1.1"
+black = "^22.8.0"
+ruff = "^0.1.9"
+isort = "^5.10.1"
+mypy = "^0.971"
+Faker = "^21.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["bst-learner"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "def __str__",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if __name__ == .__main__.:",
+  # "if TYPE_CHECKING:",
+  # "if typing.TYPE_CHECKING:"
+  "if platform.system()",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = [
+    "tests",
+]
+addopts = ["--random-order", "-q"]
+markers = [
+    "windows_only: mark a test as Windows-only",
+    "linux_only: mark a test as Linux-only"
+]
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+exclude = "tests"
+
+[tool.isort]
+profile = "black"
+atomic = true
+line_length = 120
+use_parentheses = true
+
+[tool.black]
+line_length = 120
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 120
+ignore = []
+extend-exclude = []
