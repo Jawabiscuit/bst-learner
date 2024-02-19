@@ -23,7 +23,8 @@
 
 <h1>BST Learner</h1>
 
-<p>An interactive visualization of binary search trees</p>
+<p>An interactive visualization of binary search trees.</p>
+
 <nav>
   <a href="https://github.com/Jawabiscuit/bst-learner">Repo</a>
   |
@@ -61,7 +62,11 @@
 
 ## About The Project
 
-[TODO]
+Learn how to implement binary and more specifically binary search tree data structures. This project is aimed at new and experienced programmers alike.
+
+__Reference__
+
+<li> <a href="https://www.evamariakiss.de/apps/bstlearner_v1.php">BSTLearner website</a> </li>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,9 +83,7 @@ This is a standard Python project that runs on the CLI.
 
 ### Installation
 
-1. Install dependencies `> poetry install && poetry shell`
-1. Install the language model `> python -m spacy download de_core_news_sm`
-1. Run with [TODO]
+1. Install dependencies `> poetry install`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +91,7 @@ This is a standard Python project that runs on the CLI.
 
 ## Usage
 
-[TODO] Use this space to show useful examples of how a project can be used.
+1. Run with `> poetry run python bst.py`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,12 +99,9 @@ This is a standard Python project that runs on the CLI.
 
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
-
-See the [open issues](https://github.com/Jawabiscuit/bst-learner/issues) for a full list of proposed features (and known issues).
+- [x] Insert and search
+- [x] Visualization
+- [ ] Deletion
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,16 +109,7 @@ See the [open issues](https://github.com/Jawabiscuit/bst-learner/issues) for a f
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Not accepting contributions at this time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
